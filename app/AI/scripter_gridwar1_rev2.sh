@@ -1,0 +1,89 @@
+./Solver gridwar1 all friend friend 500
+./Solver gridwar1 all friend maxmin 500
+./Solver gridwar1 all maxmin friend 500
+./Solver gridwar1 all friend folk 500
+./Solver gridwar1 all folk friend 500
+./Solver gridwar1 all friend bully 500
+./Solver gridwar1 all bully friend 500
+./Solver gridwar1 all friend bouncer 500
+./Solver gridwar1 all bouncer friend 500
+./Solver gridwar1 all friend mbrl 500
+./Solver gridwar1 all mbrl friend 500
+./Solver gridwar1 all friend umbrl 500
+./Solver gridwar1 all umbrl friend 500
+./Solver gridwar1 all friend megaS++ 500
+./Solver gridwar1 all megaS++ friend 500
+./Solver gridwar1 all friend megaExp3 500
+./Solver gridwar1 all megaExp3 friend 500
+
+./Solver gridwar1 all maxmin maxmin 500
+./Solver gridwar1 all maxmin folk 500
+./Solver gridwar1 all folk maxmin 500
+./Solver gridwar1 all maxmin bully 500
+./Solver gridwar1 all bully maxmin 500
+./Solver gridwar1 all maxmin bouncer 500
+./Solver gridwar1 all bouncer maxmin 500
+./Solver gridwar1 all maxmin mbrl 500
+./Solver gridwar1 all mbrl maxmin 500
+./Solver gridwar1 all maxmin umbrl 500
+./Solver gridwar1 all umbrl maxmin 500
+./Solver gridwar1 all maxmin megaS++ 500
+./Solver gridwar1 all megaS++ maxmin 500
+./Solver gridwar1 all maxmin megaExp3 500
+./Solver gridwar1 all megaExp3 maxmin 500
+
+./Solver gridwar1 all folk folk 500
+./Solver gridwar1 all folk bully 500
+./Solver gridwar1 all bully folk 500
+./Solver gridwar1 all folk bouncer 500
+./Solver gridwar1 all bouncer folk 500
+./Solver gridwar1 all folk mbrl 500
+./Solver gridwar1 all mbrl folk 500
+./Solver gridwar1 all folk umbrl 500
+./Solver gridwar1 all umbrl folk 500
+./Solver gridwar1 all folk megaS++ 500
+./Solver gridwar1 all megaS++ folk 500
+./Solver gridwar1 all folk megaExp3 500
+./Solver gridwar1 all megaExp3 folk 500
+
+./Solver gridwar1 all bully bully 500
+./Solver gridwar1 all bully bouncer 500
+./Solver gridwar1 all bouncer bully 500
+./Solver gridwar1 all bully mbrl 500
+./Solver gridwar1 all mbrl bully 500
+./Solver gridwar1 all bully umbrl 500
+./Solver gridwar1 all umbrl bully 500
+./Solver gridwar1 all bully megaS++ 500
+./Solver gridwar1 all megaS++ bully 500
+./Solver gridwar1 all bully megaExp3 500
+./Solver gridwar1 all megaExp3 bully 500
+
+./Solver gridwar1 all bouncer bouncer 500
+./Solver gridwar1 all bouncer mbrl 500
+./Solver gridwar1 all mbrl bouncer 500
+./Solver gridwar1 all bouncer umbrl 500
+./Solver gridwar1 all umbrl bouncer 500
+./Solver gridwar1 all bouncer megaS++ 500
+./Solver gridwar1 all megaS++ bouncer 500
+./Solver gridwar1 all bouncer megaExp3 500
+./Solver gridwar1 all megaExp3 bouncer 500
+
+./Solver gridwar1 all mbrl mbrl 500
+./Solver gridwar1 all mbrl umbrl 500
+./Solver gridwar1 all umbrl mbrl 500
+./Solver gridwar1 all mbrl megaS++ 500
+./Solver gridwar1 all megaS++ mbrl 500
+./Solver gridwar1 all mbrl megaExp3 500
+./Solver gridwar1 all megaExp3 mbrl 500
+
+./Solver gridwar1 all umbrl umbrl 500
+./Solver gridwar1 all umbrl megaS++ 500
+./Solver gridwar1 all megaS++ umbrl 500
+./Solver gridwar1 all umbrl megaExp3 500
+./Solver gridwar1 all megaExp3 umbrl 500
+
+./Solver gridwar1 all megaS++ megaS++ 500
+./Solver gridwar1 all megaS++ megaExp3 500
+./Solver gridwar1 all megaExp3 megaS++ 500
+
+./Solver gridwar1 all megaExp3 megaExp3 500

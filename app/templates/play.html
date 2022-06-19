@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% block app_content %}
+<!-- Main container -->
+<div class="float-container">
+    <!-- The input area 1st child -->
+    <div id="input-area" class="float-child">
+        <div id="chat">
+            <div id="dsply_msgs">
+                
+            </div>
+            <div id="type">
+                <input type="text" readonly class="form-control" id="usr_msg" placeholder="Type here..." autocomplete="off">
+                <button type="button" class="btn btn-default" id="send_msg">Send</button>
+            </div>
+        </div>
+        <button type="button" class="btn btn-default" id="coop">Cooperate</button>
+        <button type="button" class="btn btn-default" id="defect">Defect</button>
+        <!-- Separate -->
+        <br><br> 
+        <!-- Actions table -->
+        <table class="table">
+            <thead>
+                <tr>
+                  <th class="tg-0pky" colspan="2" rowspan="2"></th>
+                  <th class="tg-0pky" colspan="2"><span style="color:#3166FF">Your partner</span></th>
+                </tr>
+                <tr>
+                  <th class="tg-0pky"><span style="color:#3166FF">C (Cooperate)</span></th>
+                  <th class="tg-0pky"><span style="color:#3166FF">D (Defect)</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-0pky" rowspan="2"><span style="color:#F56B00">You</span></td>
+                  <td class="tg-0pky"><span style="color:#F56B00">A (Cooperate)</span></td>
+                  <td class="tg-0pky"><span style="color:#F56B00">60</span> <span style="color:#3166FF">60</span></td>
+                  <td class="tg-0pky"><span style="color:#F56B00">0</span> <span style="color:#3166FF">100</span></td>
+                </tr>
+                <tr>
+                  <td class="tg-0pky"><span style="color:#F56B00">B (Defect)</span></td>
+                  <td class="tg-0pky"><span style="color:#F56B00">100</span> <span style="color:#3166FF">0</span></td>
+                  <td class="tg-0pky"><span style="color:#F56B00">20</span> <span style="color:#3166FF">20</span></td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+    <!-- 2nd child -->
+    <div class="float-child">
+        <!-- Table -->
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Type the number of the messages and click send to send the message.<br> Don't type out the whole message.<br>
+                If you want to send more than one message, then separate the number of messages by semicolons<br>
+                For example: 1;3;5 will send the message 1, 3 and 5. <br>
+                For messages 15, 16, and 18, type the action pair after the message number. <br>
+                For example: 3;4;18 AD AC;16 AD <br>
+                As for message 17, you can only choose C or D. For example: 17 C;3 
+            </div>
+            
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <th>Message number</th>
+                    <th>Message Content</th>
+                    <th>Choose</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Do as I say or I'll punish you </td>
+                    <td><input id="" name="mycb" type="checkbox" value="0"/></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>I accept you last proposal</td>
+                    <td><input id="" name="mycb" type="checkbox" value="1"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>I don't accept your prposal</td>
+                    <td><input id="" name="mycb" type="checkbox" value="2"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>That's not fair</td>
+                    <td><input id="" name="mycb" type="checkbox" value="3"/></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>I don't trust you</td>
+                    <td><input id="" name="mycb" type="checkbox" value="4"/></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Excellent!</td>
+                    <td><input id="" name="mycb" type="checkbox" value="5"/></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Sweet. We are getting rich</td>
+                    <td><input id="" name="mycb" type="checkbox" value="6"/></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Give me another chance</td>
+                    <td><input id="" name="mycb" type="checkbox" value="7"/></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Okay. I forgive you</td>
+                    <td><input id="" name="mycb" type="checkbox" value="8"/></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>I'm changing my strategy</td>
+                    <td><input id="" name="mycb" type="checkbox" value="9"/></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>We can both do better than this</td>
+                    <td><input id="" name="mycb" type="checkbox" value="10"/></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Curse you</td>
+                    <td><input id="" name="mycb" type="checkbox" value="11"/></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>You betrayed me</td>
+                    <td><input id="" name="mycb" type="checkbox" value="12"/></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>You will pay for this</td>
+                    <td><input id="" name="mycb" type="checkbox" value="13"/></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>In your face</td>
+                    <td><input id="14" name="mycb" type="checkbox" value="14"/></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Let's always play (action pair)</td>
+                    <td><ul class="list-group">
+                        <li><label>AC&nbsp;<input id="cb151" name="15" type="radio" value="15 AC"/></label></li><li ><label>AD&nbsp;<input id="cb152" name="15" type="radio" value="15 AD"/></label></li><li><label>BC&nbsp;<input id="cb153" name="15" type="radio" value="15 BC"/></label></li><li><label>BD&nbsp;<input id="cb154" name="15" type="radio" value="15 BD"/></label></li><li><label>Deselect<input id="cb154" name="15" type="radio" value=""/></label></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>This round, let's play (action pair)</td>
+                    <td><ul class="list-group">
+                        <li><label>AC&nbsp;<input id="cb161" name="16" type="radio" value="16 AC"/></label></li><li ><label>AD&nbsp;<input id="cb162" name="16" type="radio" value="16 AD"/></label></li><li><label>BC&nbsp;<input id="cb163" name="16" type="radio" value="16 BC"/></label></li><li><label>BD&nbsp;<input id="cb164" name="16" type="radio" value="16 BD"/></label></li><li><label>Deselect<input id="cb154" name="16" type="radio" value=""/></label></li>
+                    </ul></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Don't play (action)</td>
+                    <td>
+                        <ul class="list-group">
+                            <li><label>C&nbsp;<input id="cb171" name="17" type="radio" value="17 C"/></label></li><li><label>D&nbsp;<input id="cb172" name="17" type="radio" value="17 D"/></label></li><li><label>Deselect<input id="cb154" name="17" type="radio" value=""/></label></li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Let's alternate between (action pair 1) and (action pair 2)</td>
+                    <td>
+                        <ul class="list-group">
+                            Action pair 1
+                        <li><label>AC&nbsp;<input id="cb181" name="18" type="radio" value="18 AC" onclick="handleClick(this);"/></label></li><li ><label>AD&nbsp;<input id="cb182" name="18" type="radio" value="18 AD" onclick="handleClick(this);"/></label></li><li><label>BC&nbsp;<input id="cb183" name="18" type="radio" value="18 BC" onclick="handleClick(this);"/></label></li><li><label>BD&nbsp;<input id="cb184" name="18" type="radio" value="18 BD" onclick="handleClick(this);"/></label></li><li><label>Deselect<input id="18ds" name="18" type="radio" value=""/></label></li>
+                        </ul>
+                        <ul class="list-group">
+                            Action pair 2
+                            <li><label>AC&nbsp;<input id="181" name="18b" type="radio" value="-AC" onclick="handleClick(this);"/></label></li><li ><label>AD&nbsp;<input id="182" name="18b" type="radio" value="-AD" onclick="handleClick(this);"/></label></li><li><label>BC&nbsp;<input id="183" name="18b" type="radio" value="-BC" onclick="handleClick(this);"/></label></li><li><label>BD&nbsp;<input id="184" name="18b" type="radio" value="-BD" onclick="handleClick(this);"/></label></li><li><label>Deselect<input id="18bds" name="18b" type="radio" value=""/></label></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+</div>
+
+{% endblock  %}
+{% block scripts %}
+    {{ super() }}
+    <!-- Storing Username -->
+    <script type="text/javascript">
+        const username = `{{ username }}`;
+        var gameIsOver = false;
+    </script>
+    <!-- Getting jquery -->
+    <script src="{{ url_for('static', filename='scripts/jquery-1.7.1.js') }}"></script>
+    <!-- Expir -->
+    <script>
+    var flg = true;
+    function handleClick(rad){
+        // console.log('fa');
+        if (rad.name == '18' && flg) {
+                document.getElementById('181').checked = true;
+                document.getElementById('181').value = '-AC';
+                flg = false;
+            }
+        else if (rad.name == '18b' && flg) {
+                document.getElementById('cb181').checked = true;
+                // document.getElementById('cb181').value = '18 AC';
+                // document.getElementById('cb182').value = '18 AD';
+                // document.getElementById('cb183').value = '18 BC';
+                // document.getElementById('cb184').value = '18 BD';
+                // document.getElementById('18ds').value = '';
+                flg = false;
+            }
+    }
+    </script>
+    <!-- SocketIO lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <!-- Our SocketIO JS file -->
+    <script src="{{ url_for('static', filename='scripts/socketio.js') }}"></script>
+{% endblock  %}

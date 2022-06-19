@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Find game</h1>
+    <div class="row">
+        <button type="button" class="btn btn-default" id="find">Find match</button>
+    </div>
+    <br>
+{% endblock %}
+{% block scripts %}
+    {{ super() }}
+    <!-- SocketIO lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <!-- Our SocketIO JS file -->
+    <script src="{{ url_for('static', filename='scripts/findmatch.js') }}"></script>
+{% endblock  %}

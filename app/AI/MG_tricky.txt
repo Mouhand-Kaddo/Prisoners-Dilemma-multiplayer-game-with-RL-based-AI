@@ -1,0 +1,22 @@
+numStates: 2
+numFeatures: 1
+0 	0.000	2	2
+1 	1.000	1	1
+
+Start states: 1
+0
+
+Goal states: 1
+1
+
+ActionLabels:
+select
+2
+A
+B
+
+State/reward transitions
+0 0 0 -> 1 0.000 1.000 (1)
+0 1 0 -> 1 0.330 0.000 (1)
+0 0 1 -> 1 1.000 0.670 (1)
+0 1 1 -> 1 0.670 0.330 (1)
